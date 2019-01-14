@@ -34,6 +34,8 @@ public class ItineraryListActivity extends AppCompatActivity {
         itineraryModels.add(new ItineraryModel("Paris", "Tokyo", "Kyle McCormick", new Date(), 18));
         itineraryModels.add(new ItineraryModel("Paris", "Tokyo", "Wendy Testaburger", new Date(), 16));
 
-// TODO : afficher la liste d'itinéraires avec un adapter
+        final ItineraryRecyclerAdapter adapter = new ItineraryRecyclerAdapter(itineraryModels);
+        listItineraries.setAdapter(adapter);
+
     }
 }
